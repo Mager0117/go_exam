@@ -98,8 +98,7 @@ func changePasswordHandler(c *gin.Context) {
 		return
 	}
 
-	// Assume we get the logged-in user's email (In a real application, use authentication to get the current user's info)
-	userEmail := "user@example.com" // Placeholder - replace with real user email from session or token
+	userEmail := "user@example.com"
 
 	var storedHashedPassword string
 	// Fetch user details from the database
@@ -136,6 +135,5 @@ func changePasswordHandler(c *gin.Context) {
 		return
 	}
 
-	// Return success message
-	c.JSON(http.StatusOK, gin.H{"message": "Password updated successfully"})
+	c.JSON(http.StatusOK, gin.H{"message": "Password updated successfullyyyy"})
 }
